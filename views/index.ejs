@@ -1,5 +1,6 @@
-<% include common-tags.ejs %>
+<% include common-head-tags.ejs %>
     <title>塔罗Ju</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
     <style>
         .main-content{
             position:relative;
@@ -59,11 +60,13 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="container-fluid">
 
         <% include common-header.ejs %>
         <% include IENotice.ejs %>
-
+        <div class="">
+            <p class="test1">test1</p>
+        </div>
         <% include common-footer.ejs%>
     </div>
 	<% include common-bottom-tags.ejs %>

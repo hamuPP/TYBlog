@@ -32,12 +32,14 @@ var accessLogStream = FileStreamRotator.getStream({
 	verbose: false
 });
 
-//用morgan每日记录一个access
+//锟斤拷morgan每锟秸硷拷录一锟斤拷access
 app.use(logger('combined', {stream: accessLogStream}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('node-compass')({mode: 'expanded'}));
+app.use(require('node-compass')({
+	mode: 'expanded'
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
