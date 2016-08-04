@@ -37,6 +37,7 @@ app.use(logger('combined', {stream: accessLogStream}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+/*用node-compass包编译sass文件*/
 app.use(require('node-compass')({
 	mode: 'expanded'
 }));
