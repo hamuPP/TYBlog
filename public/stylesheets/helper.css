@@ -114,3 +114,12 @@
     border-color: #9d4ae1
 }
 
+/*定位 start*/
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+/*定位 end*/
+

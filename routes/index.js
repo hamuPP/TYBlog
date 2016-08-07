@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/ckeditorDemo', function(req, res, next) {
+	res.render('ckeditorDemo');
+});
+
 module.exports = router;

@@ -1,61 +1,11 @@
 <% include common-head-tags.ejs %>
-    <title>塔罗Ju</title>
+    <title>hamuPP</title>
     <link rel="stylesheet" href="stylesheets/style.css"/>
     <style>
         .main-content{
-            position:relative;
+            /*position:relative;*/
             padding-top:1px;
-            background: url(http://pic.jusctice.cn/bg-main.jpg);
-            background-size: cover;
             margin-bottom:0;
-        }
-        .main-content-below{
-            padding-right: 15px;
-            padding-left: 15px;
-        }
-        .back,.cover{
-            position: absolute;
-            top:0;
-            left:0;
-        }
-        .back{
-            position: relative;
-            z-index: 15;
-            width:100%;
-            height: 100%;
-        }
-        .back:after{
-            clear: both;
-            content:"";
-        }
-        .text{
-            color:white;
-            text-align: center;
-            margin:auto;
-            padding:5rem 0 3rem;
-        }
-        .text h1{
-            font-size:3.4rem;
-        }
-        .text p {
-            line-height: 1.6;
-            font-size: 1.6rem;
-        }
-        .cover{
-            position: absolute;
-            z-index: 10;
-            background: rgba(34,34,34,.4);
-            height: 100%;
-            width:100%;
-        }
-        .small-cards-gallery-box img{
-            width:100%;
-        }
-        .small-cards-gallery-thumbnail{
-            padding:12px;
-            background:#672A2B;
-            display: block;
-            margin-bottom:30px;
         }
     </style>
 </head>
@@ -64,9 +14,118 @@
 
         <% include common-header.ejs %>
         <% include IENotice.ejs %>
-        <div class="row main-content">
-            <div class="col-sm-3 border-red"></div>
-            <div class="col-sm-9 border-red"></div>
+
+        <div class="main-content">
+            <div class="row">
+                <div class="relative">
+                    <div class="avatar-wrap blur" style="background-image:url(imgs/luguhu.jpg)">
+                        <!--<img src="imgs/no-data-cat.jpg" id="avatarImg" alt="头像" class="avatar"/>-->
+
+                        <!--<p id="avatarName" class="avatar-name">hamupp&nbsp;-->
+                            <!--<a href="/editMyFile?uid=uid" class="edit-avatar hide">编辑头像</a>-->
+                        <!--</p>-->
+                    </div>
+                    <div class="avatar-wrap absolute" style="">
+                        <img src="imgs/no-data-cat.jpg" id="avatarImg" alt="头像" class="avatar"/>
+
+                        <p id="avatarName" class="avatar-name">hamupp&nbsp;
+                            <a href="/editMyFile?uid=uid" class="edit-avatar hide">编辑头像</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt20">
+                <div class="col-sm-3 col-lg-2 ">
+                    <div class="category-wrapper">
+                        <h3>类别</h3>
+                        <ul class="category-outer-list">
+                            <li>类别1</li>
+                            <li>类别2</li>
+                            <ul>
+                                <li>类别2-1</li>
+                                <li>类别2-2</li>
+                                <li>类别2-3</li>
+                            </ul>
+                            <li>类别3</li>
+                            <li>类别4</li>
+                            <li>类别5</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-wrapper mt20">
+                        <h3>投稿时间</h3>
+                        <ul class="category-outer-list">
+                            <li>类别1</li>
+                            <li>类别2</li>
+                            <ul>
+                                <li>类别2-1</li>
+                                <li>类别2-2</li>
+                                <li>类别2-3</li>
+                            </ul>
+                            <li>类别3</li>
+                            <li>类别4</li>
+                            <li>类别5</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-9 col-lg-10 ">
+                    <!--正文内容 默认展示时间上最新的两篇文章-->
+                    <div class="paragram-wrapper">
+                        <p class="paragram-text2">2016年06月</p>
+                        <h3>文章标题</h3>
+                        <p>摘要 或者截取文章内容的片段 摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段</p>
+                    </div>
+
+                    <div class="paragram-wrapper">
+                        <p class="paragram-text2">2016年06月</p>
+                        <h3>文章标题</h3>
+                        <p>摘要 或者截取文章内容的片段 摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段</p>
+                    </div>
+
+                    <div class="paragram-wrapper">
+                        <p class="paragram-text2">2016年06月</p>
+                        <h3>文章标题</h3>
+                        <p>摘要 或者截取文章内容的片段 摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段摘要 或者截取文章内容的片段</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt20">
+                <div class="col-xs-12 message-board">
+                    <h3>留言板--给我留言</h3>
+                    <div class="content-line-wrapper">
+                        <img class="content-line" src="imgs/content_line.png" alt=""/>
+                    </div>
+                    <p>提交成功后，你的留言内容可以在
+                        <a target="_blank"><em class="glyphicon glyphicon-list-alt ico-wrapper"></em>留言板</a>
+                        中查看，
+                        <br/>
+                        <i>ps:留言内容为完全公开显示。如果不希望你的留言内容公开，可以选择 <a>QQ联系我</a> ，或者 <a>发送邮件给我</a> </i>
+                    </p>
+
+                    <form class="form-horizontal ">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">你的昵称</label>
+                            <div class="col-sm-10">
+                                <p class="form-control-static">未登陆用户001</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">留言内容</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="5" id="inputPassword3" placeholder="输入您的留言内容"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="button" class="btn btn-default">切换为富文本编辑模式</button>
+                                <button type="button" class="btn btn-info">发表</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
         </div>
         <% include common-footer.ejs%>
     </div>

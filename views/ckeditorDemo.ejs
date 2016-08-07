@@ -1,0 +1,35 @@
+<% include common-head-tags.ejs %>
+    <title>ckeditor_DEMO</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+    <script src="javascript/ckeditor-dev/ckeditor.js"></script>
+    <style>
+        .main-content{
+            padding-top:1px;
+            margin-bottom:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+
+        <% include common-header.ejs %>
+        <% include IENotice.ejs %>
+        <div class="row main-content">
+            <h2>ckeditor个人学习DEmo</h2>
+            <p style="font-family:'宋体';font-size:40px;">宋体ABC</p>
+            <p style="font-family:SimSun;font-size:40px;">字体SimSun</p>
+            <p style="font-family:Comic Sans MS,cursive;font-size:40px;">Comic Sans MS/Comic Sans MS, cursive字体</p>
+            <div class="col-12">
+                <textarea name="ck" id="ck" cols="30" class="ckeditor" rows="10"></textarea>
+            </div>
+        </div>
+        <% include common-footer.ejs%>
+    </div>
+	<% include common-bottom-tags.ejs %>
+    <script>
+        $(document).ready(function(){
+            CKEDITOR.replace("ck");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*毛玻璃 start*/
+.blur{
+	//      background:rgba(255,255,255,.8);
+	background:no-repeat 0% 100%;
+	background-size:100% auto;
+	width:100%;
+	box-shadow: rgba(0,0,0,0.8) 0 -1px 2px;
+	-moz-filter:blur(5px);
+	-ms-filter:blur(5px);
+	-webkit-filter:blur(5px);
+	filter:blur(5px);
+}
+.avatar-wrap.absolute{
+	bottom: 0;
+	width: 100%;
+}
+/*毛玻璃 end*/
+
+/*首页左侧的目录 start*/
+.category-wrapper {
+	background-color: #fff;
+	overflow: hidden;
+	color: $main-font-color-black;
+	h3 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+.timeline-wrapper {
+	background-color: #fff;
+	overflow: hidden;
+	color: $main-font-color-black;
+	h3 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+/*首页左侧的目录 end*/
+
+/*首页的文章列表 start*/
+.paragram-wrapper {
+	margin-bottom: 15px;
+	padding:10px;
+	background: #fff;
+	color: $main-font-color-black;
+	h1,h2,h3 {
+		color: $main-font-color-black;
+	}
+}
+.paragram-text2 {
+	color: $font-color-black-2;
+}
+/*首页的文章列表 end*/
+/*留言板 start*/
+.message-board {
+	border-top:1px solid #5C3957;
+	border-bottom:1px solid #5C3957;
+	a {
+		color: $link-color-yellow;
+	}
+	h3 {
+		text-align: center;
+		margin-bottom: 1px;
+	}
+	textarea {
+		resize: none;
+	}
+}
+/*留言板 end*/

@@ -3,15 +3,22 @@
 
 @import "helper.css";
 
+
 /*vars start*/
 $hover-bgcolor-grey: #e4e4e4;
 $hover-bgcolor-lightpur: #47233e;
+$link-color-yellow: #AA7A53;
 $bgcolor-mauve: #330f10;
 $main-font-color-pur:#790d86;
+$main-font-color-black:#333;
+$font-color-black-2:#808080;//2级小标题的浅灰色
 $main-font-color-lightpur:#bac2f5;
 $main-border-color-lightpur: rgba(187,156,255,.3);
 $header-height:50px;
 /*vars end*/
+
+@import "component.scss";
+
 html {
 	font-size: 10px;
 }
@@ -221,7 +228,6 @@ a{
 /*main-content 是页面的主体部分 start*/
 .main-content{
 	margin:$header-height auto;
-	width: 100%;
 	min-height: 500px;
 	//padding:0;
 }
@@ -263,3 +269,48 @@ a{
 //	display: block;
 //}
 /*index.ejs end*/
+
+/* 页头有头像的banner start*/
+.avatar {
+	height: 100px;
+	width: 100px;
+	display: block;
+	margin:auto;
+	border: 2px solid white;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+.avatar-wrap{
+	padding-top: 4rem;
+	height: 18.75rem;
+	background-size: 100% 100%;
+}
+.avatar-name {
+	color: #fff;
+	font-size:1.1rem;
+	font-weight: 600;
+	margin: 1rem 10px 2rem;
+	text-align: center;
+}
+.edit-avatar{
+	font-size:1rem;
+	font-weight: 400;
+}
+/* 页头有头像的banner end*/
+
+a:hover {
+	cursor: pointer;
+}
+.ico-wrapper {
+	margin-right: 3px;
+}
+
+.content-line-wrapper {
+	.content-line {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}

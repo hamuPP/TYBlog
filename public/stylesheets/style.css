@@ -2,6 +2,79 @@
 @import url(helper.css);
 /*vars start*/
 /*vars end*/
+/*毛玻璃 start*/
+.blur {
+  background: no-repeat 0% 100%;
+  background-size: 100% auto;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.8) 0 -1px 2px;
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.avatar-wrap.absolute {
+  bottom: 0;
+  width: 100%;
+}
+
+/*毛玻璃 end*/
+/*首页左侧的目录 start*/
+.category-wrapper {
+  background-color: #fff;
+  overflow: hidden;
+  color: #333;
+}
+.category-wrapper h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline-wrapper {
+  background-color: #fff;
+  overflow: hidden;
+  color: #333;
+}
+.timeline-wrapper h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*首页左侧的目录 end*/
+/*首页的文章列表 start*/
+.paragram-wrapper {
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #fff;
+  color: #333;
+}
+.paragram-wrapper h1, .paragram-wrapper h2, .paragram-wrapper h3 {
+  color: #333;
+}
+
+.paragram-text2 {
+  color: #808080;
+}
+
+/*首页的文章列表 end*/
+/*留言板 start*/
+.message-board {
+  border-top: 1px solid #5C3957;
+  border-bottom: 1px solid #5C3957;
+}
+.message-board a {
+  color: #AA7A53;
+}
+.message-board h3 {
+  text-align: center;
+  margin-bottom: 1px;
+}
+.message-board textarea {
+  resize: none;
+}
+
+/*留言板 end*/
 html {
   font-size: 10px;
 }
@@ -199,34 +272,13 @@ a:hover {
 }
 
 /*footer end*/
-/*main-content start*/
+/*main-content 是页面的主体部分 start*/
 .main-content {
   margin: 50px auto;
+  min-height: 500px;
 }
 
 /*main-content end*/
-/*index.ejs start*/
-.background-img-wrap-full {
-  margin: 0 auto;
-  background: #eee 0 0 no-repeat;
-  background-size: cover;
-}
-.background-img-wrap-full h1 {
-  background: rgba(0, 0, 0, 0.9);
-  margin: 50px 20px;
-  font-size: 22px;
-  color: #d9d9d9;
-  line-height: 1.4;
-}
-
-.login-and-reg a {
-  margin: 10px 5px;
-  /*background:rgba(44,44,44,.5);*/
-  font-size: 20px;
-  display: block;
-}
-
-/*index.ejs end*/
 /*pagination*/
 .pagination > .active-red > a, .pagination > .active-red > span, .pagination > .active-red > a:hover, .pagination > .active-red > span:hover, .pagination > .active-red > a:focus, .pagination > .active-red > span:focus {
   background-color: #bf383c;
@@ -245,4 +297,57 @@ a:hover {
 .pagination > .disabled > span, .pagination > .disabled > span:hover, .pagination > .disabled > span:focus, .pagination > .disabled > a, .pagination > .disabled > a:hover, .pagination > .disabled > a:focus {
   background-color: transparent;
   border: 1px solid #5C3957;
+}
+
+/*临时CSS 辅助线*/
+.border-red {
+  border: 1px solid red;
+}
+
+/*index.ejs start*/
+/*index.ejs end*/
+/* 页头有头像的banner start*/
+.avatar {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: auto;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.avatar-wrap {
+  padding-top: 4rem;
+  height: 18.75rem;
+  background-size: 100% 100%;
+}
+
+.avatar-name {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1rem 10px 2rem;
+  text-align: center;
+}
+
+.edit-avatar {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* 页头有头像的banner end*/
+a:hover {
+  cursor: pointer;
+}
+
+.ico-wrapper {
+  margin-right: 3px;
+}
+
+.content-line-wrapper .content-line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
