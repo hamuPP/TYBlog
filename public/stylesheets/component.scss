@@ -68,3 +68,33 @@
 	}
 }
 /*留言板 end*/
+
+/* 通用列表 start*/
+/*半透明有边框列表 start*/
+.list-transparent-border {
+	border: 1px solid $border-light-mauve;
+	h1,h2,h3,h4 {
+		background-color: rgba(0, 0, 0, .3);
+	}
+
+}
+/*半透明有边框列表 end*/
+.list-wrapper {
+	h1,h2,h3,h4 {
+		text-align: center;
+		margin-top: 0;
+		padding-top:15px;
+		padding-bottom: 10px;
+	}
+}
+/* 通用列表 end*/
+
+/*后台管理 start*/
+.content-area {
+	padding-top: 15px;
+	thead {
+		th {
+			border-top: none;
+		}
+	}
+}

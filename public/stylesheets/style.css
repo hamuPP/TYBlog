@@ -75,8 +75,38 @@
 }
 
 /*留言板 end*/
+/* 通用列表 start*/
+/*半透明有边框列表 start*/
+.list-transparent-border {
+  border: 1px solid #5C3957;
+}
+.list-transparent-border h1, .list-transparent-border h2, .list-transparent-border h3, .list-transparent-border h4 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*半透明有边框列表 end*/
+.list-wrapper h1, .list-wrapper h2, .list-wrapper h3, .list-wrapper h4 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+/* 通用列表 end*/
+/*后台管理 start*/
+.content-area {
+  padding-top: 15px;
+}
+.content-area thead th {
+  border-top: none;
+}
+
 html {
   font-size: 10px;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 @media only screen and (min-width: 360px) {
