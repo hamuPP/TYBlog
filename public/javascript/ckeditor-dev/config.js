@@ -67,22 +67,27 @@ CKEDITOR.editorConfig = function( config ) {
 		'undo,' +
 		'wysiwygarea';
 	// %REMOVE_END%
-
+console.log(555);
+	console.log(config);
 	//设置宽高
 	config.width = 800;
 	config.height = 600;
 	//默认字体
-	config.font_names = '宋体;' +
+	config.font_names = '宋体/SimSun;' +
 		'黑体;' +
 		'仿宋/仿宋_GB2312;' +
 		'楷体/楷体_GB2312' +
 		'Arial/Arial, Helvetica, sans-serif;' +
-		'Times New Roman/Times New Roman, Times, serif';
-	//config.font_defaultLabel = '宋体';
-	//
+		'Times New Roman/Times New Roman, Times, serif;' +
+		'Trebuchet MS/Trebuchet MS, Helvetica, sans-serif;' +
+		'Verdana/Verdana, Geneva, sans-serif';
+	config.font_defaultLabel = '宋体';
 	////字体默认大小 plugins/font/plugin.js
-	//config.fontSize_sizes = '56px/初号;48px/小初;34px/一号;32px/小一;29px/二号;24px/小二;21px/三号;20px/小三;18px/四号;16px/小四;14px/五号;12px/小五;10px/六号;8px/小六';
-	//config.fontSize_defaultLabel = '五号';
+	config.fontSize_sizes = '一号/34px;小一/32px;二号/29px;小二/24px;三号/21px;小三/20px;四号/18px;小四/16px;五号/14px;小五/12px;六号/10px;/小六/8px';
+	config.fontSize_defaultLabel = '五号/14px';
+
+	//添加行距图标：此功能需要额外在plugins下加入lineheight文件夹
+
 };
 
 // %LEAVE_UNMINIFIED% %REMOVE_LINE%
