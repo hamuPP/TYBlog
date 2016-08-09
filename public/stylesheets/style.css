@@ -96,9 +96,11 @@
 /*后台管理 start*/
 .content-area {
   padding-top: 15px;
+  border-bottom: 2px solid #dddddd;
 }
-.content-area thead th {
+.content-area tbody tr th {
   border-top: none;
+  border-bottom: 2px solid #dddddd;
 }
 
 html {

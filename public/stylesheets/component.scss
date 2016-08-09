@@ -92,9 +92,15 @@
 /*后台管理 start*/
 .content-area {
 	padding-top: 15px;
-	thead {
-		th {
-			border-top: none;
+		border-bottom: 2px solid rgb(221, 221, 221);
+		tbody{
+			tr{
+				th {
+					border-top: none;
+					border-bottom: 2px solid rgb(221, 221, 221);
+				}
+			}
+
 		}
-	}
+
 }
