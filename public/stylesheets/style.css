@@ -103,6 +103,19 @@
   border-bottom: 2px solid #dddddd;
 }
 
+/*等宽 小方块样式 左对齐 水平排列 多了换行*/
+.brick-inline-wrapper {
+  text-align: left;
+}
+.brick-inline-wrapper .brick-inline-item {
+  display: inline-block;
+  border: 1px solid red;
+  margin-right: 30px;
+  width: 25%;
+  vertical-align: top;
+}
+
+/*后台管理 start*/
 html {
   font-size: 10px;
 }

@@ -8,7 +8,10 @@ $(document).ready(function(){
 
 	addNewPaperBtn.on("click",function(){
 		rightContent.load("html/ckeditor.html", function(){
-			CKEDITOR.replace("ck");
+			CKEDITOR.replace("ck", {
+				extraPlugins: "codesnippet",
+				codeSnippet_theme: "monokai_sublime"
+			});
 		});
 	});
 });
