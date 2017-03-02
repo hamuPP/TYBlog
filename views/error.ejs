@@ -1,3 +1,25 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<% include common-head-tags.ejs %>
+    <title>hamuPP-404</title>
+    <style>
+        a {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <% include common-header.ejs %>
+        <% include IENotice.ejs %>
+
+        <div class="main-content text-center">
+            <h1><%= error.status %></h1>
+
+            <h2><%= message %></h2>
+            <a href="/" style="margin:2rem;">返回首页</a>
+            <a href="javascript:history.go(-1);">返回上个页面</a>
+        </div>
+        <% include common-footer.ejs%>
+    </div>
+    <% include common-bottom-tags.ejs %>
+</body>
+</html>

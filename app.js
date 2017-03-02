@@ -7,9 +7,6 @@ var FileStreamRotator = require('file-stream-rotator');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
-
 var app = express();
 
 // view engine setup
@@ -43,14 +40,16 @@ app.use(require('node-compass')({
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
-app.use('/users', users);
+//app.use('/', routes);
+//app.use('/users', users);
+
+require('./routes/routes')(app);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+	var err = new Error('您请求的资源不存在');
+	err.status = 404;
+	next(err);
 });
 
 // error handlers

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<!--<script src="../javascript/html5media.min.js"></script>-->
+</head>
+<body>
+	<h2>video</h2>
+
+	<h3>用了一个js插件后，在各浏览器下的显示</h3>
+	<video src="../video/M_13.mp4" controls autobuffer width="400">
+		your browser does not support the video tag
+	</video>
+
+	<p>ie678还是不兼容video</p>
+
+	<embed src="../video/M_13.mp4" width="600" height="400" />
+	<object data="../video/M_13.mp4" width="600" height="400"></object>
+
+	<h2>html5+&lt;object>+&lt;embed></h2>
+	<video width="600" height="400" controls="controls">
+		<source src="../video/M_13.mp4" type="video/mp4" />
+		<!--<source src="movie.ogg" type="video/ogg" />-->
+		<!--<source src="movie.webm" type="video/webm" />-->
+		<object data="../video/M_13.mp4" width="600" height="400">
+			<embed src="../video/M_13.mp4" width="600" height="400" />
+		</object>
+	</video>
+
+	<video width="600" height="400" controls="controls">
+		<source src="../video/flash.swf" type="application/x-shockwave-flash" />
+		<!--<object data="../video/flash.swf" width="600" height="400">-->
+			<embed src="../video/flash.swf" width="600" height="400" />
+		<!--</object>-->
+	</video>
+
+</body>
+</html>

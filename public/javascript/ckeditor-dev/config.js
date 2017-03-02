@@ -65,8 +65,7 @@ CKEDITOR.editorConfig = function( config ) {
 		'templates,' +
 		'toolbar,' +
 		'undo,' +
-		'wysiwygarea';
-	// %REMOVE_END%
+		'wysiwygarea';// %REMOVE_END%
 	console.log(555);
 	console.log(config);
 	//设置宽高

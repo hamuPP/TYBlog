@@ -20,15 +20,24 @@
             <p style="font-family:SimSun;font-size:40px;">字体SimSun</p>
             <p style="font-family:Comic Sans MS,cursive;font-size:40px;">Comic Sans MS/Comic Sans MS, cursive字体</p>
             <div class="col-12">
-                <textarea name="ck" id="ck" cols="30" class="ckeditor" rows="10"></textarea>
+                <textarea name="content" id="ckk" cols="30" class="ckeditor" rows="10"></textarea>
             </div>
         </div>
+        <button id="btn">show</button>
         <% include common-footer.ejs%>
     </div>
 	<% include common-bottom-tags.ejs %>
     <script>
         $(document).ready(function(){
-            CKEDITOR.replace("ck");
+            //var editor =  CKEDITOR.replace("ckk");
+
+            $("#btn").on("click", function(){
+                var stem = CKEDITOR.instances.ckk.getData();
+                console.log(stem);
+                console.log(ckk);
+                var content = ckk.document.getBody().getHtml();
+                console.log(content);
+            });
         });
     </script>
 </body>
